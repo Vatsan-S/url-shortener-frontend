@@ -131,7 +131,7 @@ const Landingpage = () => {
                     {ele.identifier}
                   </td>
                   <td className="tdPadding">
-                    http://localhost:4000/api/user/{ele.shortUrl}
+                  https://url-shortner-backend-cqtj.onrender.com/api/user/{ele.shortUrl}
                   </td>
                   <td className="urlCol display tdPadding">{ele.url}</td>
                 </tr>
