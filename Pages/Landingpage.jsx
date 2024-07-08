@@ -21,7 +21,7 @@ const Landingpage = () => {
       currentUser: currentUser._id,
     };
     await axios
-      .post("http://localhost:4000/api/user/fetch_url", payload1)
+      .post("https://url-shortner-backend-cqtj.onrender.com/api/user/fetch_url", payload1)
       .then((res) => {
         console.log(res.data);
         dispatch(updateAllData(res.data.allUrls.reverse()));
