@@ -41,7 +41,7 @@ const Landingpage = () => {
       currentUser: currentUser._id,
     };
     await axios
-      .post("http://localhost:4000/api/user/generate_url", payload)
+      .post("https://url-shortner-backend-cqtj.onrender.com/api/user/generate_url", payload)
       .then((res) => {
         console.log(res.data);
         if (res.data.message) {

@@ -21,7 +21,7 @@ const Register = () => {
       lastname: userlastname,
     };
     await axios
-      .post("http://localhost:4000/api/user/register", payload)
+      .post("https://url-shortner-backend-cqtj.onrender.com/api/user/register", payload)
       .then((res) => {
         navigate("/login");
       })

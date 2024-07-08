@@ -14,7 +14,7 @@ const Forgotpassword = () => {
       username: username,
     };
     await axios
-      .post("http://localhost:4000/api/user/forgot_password", payload)
+      .post("https://url-shortner-backend-cqtj.onrender.com/api/user/forgot_password", payload)
       .then((res) => setState(false))
       .catch((err) => {
         setMsg(err.response.data.message);

@@ -11,7 +11,7 @@ const Activation = () => {
   };
   const activation = async () => {
     await axios
-      .post("http://localhost:4000/api/user/activation", payload)
+      .post("https://url-shortner-backend-cqtj.onrender.com/api/user/activation", payload)
       .then((res) => {
         console.log(res.data);
         navigate("/login");

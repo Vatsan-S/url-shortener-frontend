@@ -19,7 +19,7 @@ const Resetpassword = () => {
       id: id,
     };
     await axios
-      .post("http://localhost:4000/api/user/reset_password", payload)
+      .post("https://url-shortner-backend-cqtj.onrender.com/api/user/reset_password", payload)
       .then((res) => {
         navigate("/login");
       })

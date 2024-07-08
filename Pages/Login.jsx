@@ -21,7 +21,7 @@ const Login = () => {
       password: password,
     };
     await axios
-      .post("http://localhost:4000/api/user/login", payload)
+      .post("https://url-shortner-backend-cqtj.onrender.com/api/user/login", payload)
       .then((res) => {
         localStorage.setItem("Token", res.data.token);
         console.log(res.data.result);
