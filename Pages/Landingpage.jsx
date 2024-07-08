@@ -23,7 +23,7 @@ const Landingpage = () => {
     await axios
       .post("https://url-shortner-backend-cqtj.onrender.com/api/user/fetch_url", payload1)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         dispatch(updateAllData(res.data.allUrls.reverse()));
       });
   };
@@ -43,7 +43,7 @@ const Landingpage = () => {
     await axios
       .post("https://url-shortner-backend-cqtj.onrender.com/api/user/generate_url", payload)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         if (res.data.message) {
           setMsg(res.data.message);
         }

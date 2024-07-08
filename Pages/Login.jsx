@@ -14,8 +14,8 @@ const Login = () => {
   // ===============================================handleSubmit on login ===========================================
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("username", username);
-    console.log("Password", password);
+    // console.log("username", username);
+    // console.log("Password", password);
     const payload = {
       username: username,
       password: password,
@@ -24,7 +24,7 @@ const Login = () => {
       .post("https://url-shortner-backend-cqtj.onrender.com/api/user/login", payload)
       .then((res) => {
         localStorage.setItem("Token", res.data.token);
-        console.log(res.data.result);
+        // console.log(res.data.result);
         dispatch(signInSuccess(res.data.result));
         navigate("/landingpage");
       })

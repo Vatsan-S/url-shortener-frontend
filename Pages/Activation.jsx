@@ -13,7 +13,7 @@ const Activation = () => {
     await axios
       .post("https://url-shortner-backend-cqtj.onrender.com/api/user/activation", payload)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         navigate("/login");
       });
   };
